@@ -1,6 +1,5 @@
 {% set version = '0.4.2' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-schoolmath
@@ -13,8 +12,7 @@ source:
   sha256: 67cfb937f95c680d4bd3a274a43bff847342f4b962cbe421de537a16dd8d1064
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
