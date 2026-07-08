@@ -1,4 +1,4 @@
-{% set version = '0.4.2' %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/schoolmath_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/schoolmath/schoolmath_{{ version }}.tar.gz
-  sha256: 67cfb937f95c680d4bd3a274a43bff847342f4b962cbe421de537a16dd8d1064
+  sha256: f782878e4fca577fdf353ea4954dfab04b34de09b0b8e482971918873aded3ea
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,8 +39,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=schoolmath
   license: GPL-2.0-or-later
-  summary: Contains functions and datasets for math taught in school. A main focus is set to
-    prime-calculation.
+  summary: Contains functions and datasets for math taught in school. A main focus is set to prime-calculation.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
