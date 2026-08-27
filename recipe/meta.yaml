@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/schoolmath_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/schoolmath/schoolmath_{{ version }}.tar.gz
-  sha256: f782878e4fca577fdf353ea4954dfab04b34de09b0b8e482971918873aded3ea
+  sha256: 94bc6e8accf58a0fb41701ec4597c078a6e6a6c945ef5be2346766b03b43fbfe
 
 build:
   number: 0
